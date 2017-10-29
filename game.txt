@@ -21,7 +21,7 @@ Layout
 	*res
 		contains:Resources
 		header:Resources
-		class:fullWidth
+		class:building
 	*store
 		contains:buildings, upgrades
 	*buildings
