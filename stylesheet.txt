@@ -55,7 +55,7 @@
 	left:0%;
 	width:35%;
 	position:absolute;
-	display: block;
+	display: table;
 
 }
 #box-buttons
@@ -63,8 +63,8 @@
 	top:0px;
 	right:0px;
 	bottom:0px;
-	left:0%;
-	width:65%
+	left:0px;
+	//width:65%
 	position:absolute;
 }
 #box-store
