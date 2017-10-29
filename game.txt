@@ -32,8 +32,6 @@ Layout
     header:Upgrades
     costs:hide
     names:hide
-	Layout
-  use default
   *achievs
     in:main
     contains:Achievements
