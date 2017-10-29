@@ -14,6 +14,7 @@ Settings
     stylesheet:https://rawgit.com/Emaster111/test/master/stylesheet.txt
  
 Layout
+
 	*main
 		contains:res, buttons
 	*buttons
