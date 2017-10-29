@@ -49,19 +49,15 @@
 }
 #box-res.fullWidth
 {
-	width:35%;
-	right:0px;
 	top:0px;
 	bottom:0px;
+	width:35%;
 	left:0%;
 	position:absolute;
 //	display: table;
-	text-align:left;
+	text-align:center;
 	overflow-x:hidden;
 	overflow-y:scroll;
-	display:block;
-	margin-right:0px;
-	font-size:14px;
 }
 #box-buttons
 {
