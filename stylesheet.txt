@@ -47,14 +47,14 @@
 	width:60%;
 	position:absolute;
 }
-#box-res//.fullWidth
+#box-res.fullWidth
 {
 	top:0px;
 	bottom:0px;
 	width:35%;
 	left:0%;
 	position:absolute;
-//	display: table;
+	display: block;
 //	text-align:center;
 	overflow-x:hidden;
 	overflow-y:scroll;
