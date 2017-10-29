@@ -41,7 +41,7 @@ Resources
 		
     *wood
         name:Wood
-        desc:Logs and branches.
+        desc:Logs and branches. Useful for constructions and fuel.
         icon:icons[0,1]
         class:noBackground
         show earned
@@ -77,7 +77,7 @@ Buildings
         on click:anim glow
        
     *tent|tents
-        name:Tent|Tentss
+        name:Tent|Tents
         desc:A basic shelter.<//><b>Effect:</b><.>Increases max population by 1.
         icon:icons[0,4]
         cost:10 wood
