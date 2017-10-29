@@ -10,7 +10,7 @@ Settings
     // background:stuff/meadow.jpg
     building cost increase:115%
     building cost refund:100%
-    spritesheet:icons, 48 by 48, https://rawgit.com/Emaster111/test/master/sprites.jpg
+    spritesheet:icons, 48 by 48, https://rawgit.com/Emaster111/test/master/sprites.png
     stylesheet:https://rawgit.com/Emaster111/test/master/stylesheet.txt
  
 Layout
@@ -40,7 +40,7 @@ Buttons
         on click:anim icon wobble
         on click:yield 1 wood
         //on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
-        icon:https://rawgit.com/Emaster111/test/master/explore.jpg
+        icon:https://rawgit.com/Emaster111/test/master/explore.png
         no text
         class:bigButton hasFlares
         icon class:shadowed
