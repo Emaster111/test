@@ -40,7 +40,7 @@ Buttons
         on click:anim icon wobble
         on click:yield 1 wood
         //on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
-        icon:icons[0,0]
+        icon:https://rawgit.com/Emaster111/test/master/explore.jpg
         no text
         class:bigButton hasFlares
         icon class:shadowed
