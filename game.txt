@@ -50,7 +50,7 @@ Resources
 	*energy
 		name:Energy
 		desc:Your energy to do actions.
-		icon:icons[0,1]
+		icon:icons[1,0]
 		class:noBackground
         show earned
 		start with:100
