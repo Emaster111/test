@@ -47,18 +47,22 @@
 	width:60%;
 	position:absolute;
 }
-#box-res //.fullWidth
+
+#box-res
 {
 	top:0px;
 	bottom:0px;
 	width:35%;
 	left:0%;
 	position:absolute;
-	display: block;
-//	text-align:center;
 	overflow-x:hidden;
 	overflow-y:scroll;
+	display:block;
+	margin-left:0px;
+	margin-right:0px;
+	z-index:10;
 }
+
 #box-buttons
 {
 	top:0px;

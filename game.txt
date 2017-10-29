@@ -4,7 +4,7 @@ Let's make a game!
     desc:Idle RPG
     created:29/10/2017
     updated:29/10/2017
-    version:2
+    version:1
  
 Settings
     // background:stuff/meadow.jpg
@@ -15,7 +15,7 @@ Settings
  
 Layout
 	*main
-		contains:res, stats, buttons
+		contains:res, buttons, stats
 	*buttons
 		contains:Buttons
 	*stats
@@ -23,7 +23,7 @@ Layout
 	*res
 		contains:Resources
 		header:Resources
-//		class:fullWidth
+		class:building
 	*store
 		contains:buildings, upgrades
 	*buildings
@@ -64,14 +64,14 @@ Resources
 		name:Population
 		desc:Your little helpers. Waiting for your instructions.
 		icon:icons[0,3]
-		class:building
+//		class:building
         show earned
 		
     *wood
         name:Wood
         desc:Logs and branches. Useful for constructions and fuel.
 		icon:icons[0,1]
-		class:building
+//		class:building
         show earned
               
 Shinies
