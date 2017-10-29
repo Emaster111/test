@@ -63,15 +63,15 @@ Resources
 	*population
 		name:Population
 		desc:Your little helpers. Waiting for your instructions.
-//		icon:icons[0,3]
-		class:noBackground
+		icon:icons[0,3]
+//		class:noBackground
         show earned
 		
     *wood
         name:Wood
         desc:Logs and branches. Useful for constructions and fuel.
- //       icon:icons[0,1]
-        class:noBackground
+		icon:icons[0,1]
+//        class:noBackground
         show earned
               
 Shinies
