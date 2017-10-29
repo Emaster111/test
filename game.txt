@@ -18,6 +18,7 @@ Layout
 		contains:res, buttons
 	*res
 		contains:Resources
+		class:fullWidth
 	*buttons
 		contains:Buttons
 	*store
