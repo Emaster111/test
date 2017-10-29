@@ -47,7 +47,7 @@
 	width:60%;
 	position:absolute;
 }
-#box-res
+#box-res.fullWidth
 {
 	right:0px;
 	top:0px;
