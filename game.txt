@@ -16,11 +16,11 @@ Settings
 Layout
 	*main
 		contains:res, buttons
+	*buttons
+		contains:Buttons
 	*res
 		contains:Resources
 		class:fullWidth
-	*buttons
-		contains:Buttons
 	*store
 		contains:buildings, upgrades
 	*buildings
