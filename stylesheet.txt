@@ -47,7 +47,7 @@
 	width:60%;
 	position:absolute;
 }
-#box-res .fullWidth
+#box-res.fullWidth
 {
 	top:0px;
 	bottom:0px;
@@ -190,6 +190,3 @@
 }
 
 #game.filtersOn .thing-icon{filter:drop-shadow(3px 3px 1px rgba(0,0,0,0.5));}
-
-.inventory{
-}
