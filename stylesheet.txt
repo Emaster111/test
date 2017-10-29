@@ -56,9 +56,12 @@
 	left:0%;
 	position:absolute;
 //	display: table;
+	text-align:center
 	overflow-x:hidden;
 	overflow-y:scroll;
-
+	display:block;
+	margin-right:0px;
+	font-size:14px;
 }
 #box-buttons
 {
