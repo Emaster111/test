@@ -15,7 +15,7 @@ Settings
  
 Layout
 	*main
-		contains:res, stats, buttons
+		contains:res, buttons
 	*res
 		contains:Resources
 	*buttons
@@ -47,6 +47,14 @@ Buttons
         tooltip class:red
        
 Resources
+	*energy
+		name:Energy
+		desc:Your energy to do actions.
+		icon:icons[0,0]
+		class:noBackground
+        show earned
+		start with:100
+		
 	*population
 		name:Population
 		desc:Your little helpers. Waiting for your instructions.
@@ -102,16 +110,4 @@ Buildings
 Upgrades
     *TEMPLATE
         on click:anim glow
-
-Stats
-	*TEMPLATE
-	
-	*energy
-		name:Energy
-		desc:Your energy to do actions.
-		icon:icons[0,0]
-		class:noBackground
-        show earned
-		start with:100
- 
-    
+   
