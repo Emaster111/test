@@ -64,14 +64,14 @@ Resources
 		name:Population
 		desc:Your little helpers. Waiting for your instructions.
 		icon:icons[0,3]
-//		class:noBackground
+		class:building
         show earned
 		
     *wood
         name:Wood
         desc:Logs and branches. Useful for constructions and fuel.
 		icon:icons[0,1]
-//        class:noBackground
+		class:building
         show earned
               
 Shinies
