@@ -71,7 +71,7 @@ Resources
         name:Wood
         desc:Logs and branches. Useful for constructions and fuel.
 		icon:icons[0,1]
-		class:fullWidth
+//		class:fullWidth
         show earned
               
 Shinies
