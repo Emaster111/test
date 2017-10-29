@@ -13,7 +13,7 @@
 	padding:0px;
 	box-shadow:none;
 }
-.thing,.box-header,.box-footer,.box-bit,
+.thing,.box-header,.box-footer,.box-bit
 {
 	background:rgba(255,255,255,0.5);
 	border:1px solid rgba(0,0,0,0.9);
@@ -55,7 +55,7 @@
 	left:0%;
 	position:absolute;
 //	display: table;
-	text-align:center;
+//	text-align:center;
 	overflow-x:hidden;
 	overflow-y:scroll;
 }
