@@ -4,7 +4,7 @@ Let's make a game!
     desc:Idle RPG
     created:29/10/2017
     updated:29/10/2017
-    version:1
+    version:1.1
  
 Settings
     // background:stuff/meadow.jpg
