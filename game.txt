@@ -53,7 +53,6 @@ Resources
 		name:Energy
 		desc:Your energy to do actions.
 		icon:icons[1,0]
-		class:noBackground
         show earned
 		start with:100
 		
@@ -61,14 +60,12 @@ Resources
 		name:Population
 		desc:Your little helpers. Waiting for your instructions.
 		icon:icons[0,3]
-		class:noBackground
         show earned
 		
     *wood
         name:Wood
         desc:Logs and branches. Useful for constructions and fuel.
         icon:icons[0,1]
-        class:noBackground
         show earned
               
 Shinies
