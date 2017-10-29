@@ -64,7 +64,7 @@ Resources
 		name:Population
 		desc:Your little helpers. Waiting for your instructions.
 		icon:icons[0,3]
-		class:fullWidth
+//		class:fullWidth
         show earned
 		
     *wood
