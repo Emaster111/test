@@ -20,7 +20,7 @@ Layout
 		contains:Buttons
 	*res
 		contains:Resources
-		class:fullWidth
+		class:fullWidth, building
 	*store
 		contains:buildings, upgrades
 	*buildings
