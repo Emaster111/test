@@ -14,24 +14,10 @@ Settings
     stylesheet:https://rawgit.com/Emaster111/test/master/stylesheet.txt
  
 Layout
-    *main
-  contains:res, buttons
-  *res
-    contains:Resources
-    class:fullWidth
-  *buttons
-    contains:Buttons
-*store
-  contains:buildings, upgrades
-  *buildings
-    contains:BulkDisplay, Buildings
-    header:Buildings
-    tooltip origin:left
-  *upgrades
-    contains:Upgrades
-    header:Upgrades
-    costs:hide
-    names:hide
+  use default
+  *achievs
+    in:main
+    contains:Achievements
        
 Buttons
     *bunnyButton
