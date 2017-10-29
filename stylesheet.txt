@@ -47,7 +47,7 @@
 	width:60%;
 	position:absolute;
 }
-#box-res.fullWidth
+#box-res
 {
 	right:0px;
 	top:0px;
@@ -55,6 +55,7 @@
 	left:0%;
 	width:35%;
 	position:absolute;
+
 }
 #box-buttons
 {
@@ -104,6 +105,7 @@
 	display:inline-block;
 	padding:0px;
 	cursor:pointer;
+	float:left;
 }
 .thing:active
 {
