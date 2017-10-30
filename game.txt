@@ -23,7 +23,7 @@ Layout
 		contains:Resources
 		header:Cargo Bay
 	*store
-		contains:buildings, upgrades
+		contains:buildings, jobs, upgrades
 	*buildings
 		contains:BulkDisplay, Buildings
 		header:Rooms
@@ -33,6 +33,9 @@ Layout
 		header:Technology
 		costs:hide
 		names:hide
+	*jobs
+		contains:tag:job
+		header:Jobs
 	*stats
 		header:Cockpit
 		contains:tag:Stat
@@ -49,6 +52,7 @@ Buttons
 		on click:anim icon wobble
 		on click:yield 1 population
 		on click:yield 100 lifesupport
+		on click:yield 10000 metal
         //on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
         icon:https://rawgit.com/Emaster111/test/master/explore.png
         no text
@@ -62,13 +66,20 @@ Resources
 	*TEMPLATE
 		class:inventory
 		
-	*energy
+	*hull
 		name:HP
-		desc:Hull Points.</>Your ship structure to whistand damage.
+		desc:</>Hull Points.</>Your ship structure to whistand damage.
 		tag:Stat
 		icon:icons[1,0]
 		on click:log(logcss) Hello world!.
-		hidden
+		//hidden
+		
+	*power
+		name:EP
+		desc:</>Energy Points.</>Your ship batteries holds the power of your generators.
+		tag:Stat
+		icon:icons[2,0]
+		//hidden
 		
 	*population
 		name:Population
@@ -79,13 +90,18 @@ Resources
 			yield -1*population lifesupport
 			if (lifesupport<=0) log(logcss) Game over!
 		end
-		hidden when 0
+		show earned
 			
     *lifesupport
         name:Life Support
-        desc:</>Food, water, oxygen and medicine.</>All resources needed for survival.<//><b>Details:</b><.>Population: <#ff0000>[-1*population]</#>
+        desc:</>Food, water, oxygen and medicine.</>All resources needed for survival.<//><b>Details:</b>[?(have lss)|<.>Life Support System: <#00ff00>[1*lss]</#>]<.>Population: <#ff0000>[-1*population:earned]</#>
         icon:icons[0,1]
 		//hidden
+		shown
+	*metal
+		name:Scrap Metal
+		desc:</>Random metallic and electronic parts.
+		icon:icons[1,1]
 		shown
               
 Shinies
@@ -118,12 +134,12 @@ Buildings
     *TEMPLATE
         on click:anim glow
        
-    *tent|tents
-        name:Tent|Tents
-        desc:A basic shelter.<//><b>Effect:</b><.>Increases max population by 1.
+    *lss
+        name:Life Support System
+        desc:</>Ship room dedicated to replicate life support units.<//><b>Effect:</b><.>Life Support: <#00ff00>[lss]</#>
         icon:icons[0,4]
-        cost:10 wood
-        passive:grant 1 population
+        cost:100 metal
+        on tick:yield 1 lifesupport
         unlocked
        
 Upgrades
