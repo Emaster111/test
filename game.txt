@@ -11,19 +11,16 @@ Settings
     building cost increase:115%
     building cost refund:100%
     spritesheet:icons, 48 by 48, https://rawgit.com/Emaster111/test/master/sprites.png
-    stylesheet:https://rawgit.com/Emaster111/test/master/stylesheet.txt
+    stylesheet:https://www.dropbox.com/s/tlhxupnvrf8ppys/stylesheet.txt?dl=1
  
 Layout
 	*main
-		contains:res, buttons, stats
+		contains:res, buttons
 	*buttons
 		contains:Buttons
-	*stats
-		contains:tag:stats
 	*res
 		contains:Resources
-		header:Resources
-		class:building
+		header:Inventory
 	*store
 		contains:buildings, upgrades
 	*buildings
@@ -51,12 +48,13 @@ Buttons
         tooltip class:red
        
 Resources
+	*TEMPLATE
+		class:inventory
+		
 	*energy
 		name:Energy
-		tag:stats
 		desc:Your energy to do actions.
 		icon:icons[1,0]
-//		class:noBackground
         show earned
 		start with:100
 		
@@ -64,14 +62,12 @@ Resources
 		name:Population
 		desc:Your little helpers. Waiting for your instructions.
 		icon:icons[0,3]
-//		class:building
         show earned
 		
     *wood
         name:Wood
         desc:Logs and branches. Useful for constructions and fuel.
-		icon:icons[0,1]
-//		class:building
+        icon:icons[0,1]
         show earned
               
 Shinies
