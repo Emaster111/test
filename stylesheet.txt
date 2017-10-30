@@ -47,7 +47,7 @@
 	width:60%;
 	position:absolute;
 }
-#box-res
+#box-stats
 {
 	top:0px;
 	bottom:0px;
@@ -57,15 +57,34 @@
 	overflow-x:hidden;
 	overflow-y:scroll;
 }
-
-#box-buttons
+#box-res
 {
-	top:0px;
+	top:30%;
+	bottom:0px;
+	width:45%;
+	left:0%;
+	position:absolute;
+	overflow-x:hidden;
+	overflow-y:scroll;
+}
+#box-log
+{
+	top:70%;
 	right:0px;
 	bottom:0px;
 	left:45%;
 	width:55%;
 	position:absolute;
+}
+#box-buttons
+{
+	top:0px;
+	right:0px;
+	bottom:30%;
+	left:45%;
+	width:55%;
+	position:absolute;
+	overflow-y:scroll;
 }
 #box-store
 {
@@ -189,6 +208,15 @@
 
 #game.filtersOn .thing-icon{filter:drop-shadow(3px 3px 1px rgba(0,0,0,0.5));}
 
-.inventory{
+.logcss{
+	font-size:12px;
 }
+
+.dim{
+
+}
+.lit{
+
+}
+
 

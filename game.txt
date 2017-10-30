@@ -15,60 +15,78 @@ Settings
  
 Layout
 	*main
-		contains:res, buttons
+		contains:stats, res, buttons, log
 	*buttons
+		header:Commands
 		contains:Buttons
 	*res
 		contains:Resources
-		header:Inventory
+		header:Cargo Bay
 	*store
 		contains:buildings, upgrades
 	*buildings
 		contains:BulkDisplay, Buildings
-		header:Buildings
+		header:Rooms
 		tooltip origin:left
 	*upgrades
 		contains:Upgrades
-		header:Upgrades
+		header:Technology
 		costs:hide
 		names:hide
+	*stats
+		header:Cockpit
+		contains:tag:Stat
+		tooltip origin:right
+	*log
+		header:Log
+		contains:Log
        
 Buttons
+
     *explore|exploration
         name:Exploration
         desc:Click this button to search for resources.
-        on click:anim icon wobble
-        on click:yield 1 wood
+		on click:anim icon wobble
+		on click:yield 1 population
+		on click:yield 100 lifesupport
         //on click:if (have goldenTouch and chance(1%)) yield 1 goldenCarrot
         icon:https://rawgit.com/Emaster111/test/master/explore.png
         no text
-        class:bigButton hasFlares
+        class:bigButton 
+//hasFlares
         icon class:shadowed
         tooltip origin:bottom
         tooltip class:red
-       
+
 Resources
 	*TEMPLATE
 		class:inventory
 		
 	*energy
-		name:Energy
-		desc:Your energy to do actions.
+		name:HP
+		desc:Hull Points.</>Your ship structure to whistand damage.
+		tag:Stat
 		icon:icons[1,0]
-        show earned
-		start with:100
+		on click:log(logcss) Hello world!.
+		hidden
 		
 	*population
 		name:Population
-		desc:Your little helpers. Waiting for your instructions.
+		desc:</>Unoccupied ship population.</>Assign them to a work station.
+		tag:Stat
 		icon:icons[0,3]
-        show earned
-		
-    *wood
-        name:Wood
-        desc:Logs and branches. Useful for constructions and fuel.
+		on tick:
+			yield -1*population lifesupport
+			if (lifesupport<=0) log(logcss) Game over!
+		end
+		hidden when 0
+			
+    *lifesupport
+        name:Life Support
+        desc:</>Food, water, oxygen and medicine.</>All resources needed for survival.<//><b>Details:</b><.>Population: <#ff0000>[-1*population]</#>
         icon:icons[0,1]
-        show earned
+		//hidden
+		shown
               
 Shinies
 
